@@ -47,8 +47,7 @@ This project runs on a **synthetic, illustrative dataset** (60,000 shipments acr
 
 ## Stack
 
-Python (pandas, NumPy, scikit-learn, Matplotlib) · Node.js (pptxgenjs, docx) · hand-built SVG/vanilla-JS dashboard (no charting library)
-
+Python (pandas, NumPy, scikit-learn, Matplotlib)
 ## License
 
 MIT — see [LICENSE](LICENSE).
