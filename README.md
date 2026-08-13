@@ -38,35 +38,6 @@ Full root-cause analysis (5W framing, a 5-Whys chain, and a fishbone/Ishikawa di
 
 Open [`docs/dashboard.html`](docs/dashboard.html) directly in a browser for the full interactive version (hover for tooltips, dark-mode toggle).
 
-## Repo structure
-
-```
-├── src/
-│   ├── 01_generate_data.py   # synthetic shipment & account dataset
-│   ├── 02_analysis.py        # Detect → Target → Forecast pipeline
-│   ├── 03_fishbone.py        # root-cause (Ishikawa) diagram
-│   ├── 04_build_deck.js      # presentation deck (pptxgenjs)
-│   └── 05_build_doc.js       # written report (docx)
-├── data/                     # generated synthetic dataset (accounts, shipments)
-├── output/                   # analysis results (leakage, tiers, forecast, recommendations)
-└── docs/
-    ├── dashboard.html                              # interactive results dashboard
-    ├── revenue_quality_problem_and_solution.docx   # full written report
-    └── fedex_revenue_science_poc.pptx              # presentation deck
-```
-
-## Running it yourself
-
-```bash
-pip install pandas numpy scikit-learn matplotlib
-npm install pptxgenjs docx
-
-python3 src/01_generate_data.py   # → data/accounts.csv, data/shipments.csv
-python3 src/02_analysis.py        # → output/*.csv
-python3 src/03_fishbone.py        # → output/fishbone.png
-node src/04_build_deck.js         # → the presentation deck
-node src/05_build_doc.js          # → the written report
-```
 
 ## Method & data transparency
 
